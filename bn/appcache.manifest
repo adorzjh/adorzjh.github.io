@@ -1,0 +1,11 @@
+CACHE MANIFEST
+
+# Version 1.3
+
+BigNums-v3.html
+../js/jquery-1.11.1.min.js
+../js/jquery.mobile-1.4.5.min.js
+../js/spectrum.min.js
+../js/gcolor.js
+../css/jquery.mobile-1.4.5.min.css
+../css/spectrum.min.css
