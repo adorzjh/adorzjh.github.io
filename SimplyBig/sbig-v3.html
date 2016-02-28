@@ -81,77 +81,93 @@
 		</label>
 	</div>
 </div>
-<div class="item-container">
-	<div class="item-container-header">Predefined Color Schemes</div>
-	<div class="item-container-content">
-		<label class="item">
-			Color scheme
-			<select name="theme" id="theme" dir="rtl" class="item-select">
-				<option class="item-select-option" value="0" selected>Actual - no change</option>
-				<option class="item-select-option" value="1">Default</option>
-				<option class="item-select-option" value="2">Black on White</option>
-				<option class="item-select-option" value="3">White on Black</option>
-				<option class="item-select-option" value="4">Blue</option>
-				<option class="item-select-option" value="5">Red</option>
-				<option class="item-select-option" value="6">Color mix</option>
-				<option class="item-select-option" value="7">Green on White</option>
-				<option class="item-select-option" value="8">Red on White</option>
-			</select>
-		</label>	
+
+<div id='bwonly'>
+	<div class="item-container">
+		<div class="item-container-header">Colors</div>
+		<div class="item-container-content">
+			<label class="item">Invert
+				<input type="checkbox" class="item-toggle" name="invert" id="invert" />
+			</label>
+		</div>
 	</div>
 </div>
 
-<div style="padding: 20px 40%">
-<div style="width: 88px; background-color: black; height: 98px; padding: 1px; font-family: sans serif; text-align: center; text-decoration: none; text-shadow: none !important;" id="preview0">
-	<div style="width: 88px; height: 24px; margin: 0; border: 0; padding: 0; font-size: 14px; color: yellow" id='ct-date'>AUG 22</div>
-	<div style="padding: 10px 0 ; margin: 0; border: 0;">
-		<span style="font-size: 24px; color: orange;" id='ct-hour'>12</span>
-		<span style="font-size: 20px; color: darkgray;" id='ct-colon'>:</span>
-		<span style="font-size: 24px; color: white;" id='ct-min'>00</span>
-	</div>
-	<div style="width: 88px; height: 24px; margin: 0; border: 0; padding: 0; text-align: center; font-size: 14px; color: yellow" id='ct-dow'><span style="font-size: 10px; color: white; padding-right: 10px;" id='ct-bat'>90 </span>SAT<span style="font-size: 10px; color: white; padding-left: 10px;" id='ct-week'> 05</span></div>
-</div>
-</div>
 
-<div class="item-container">
-	<div class="item-container-header">Color scheme designer</div>
-	<div class="item-container-content">
-		<label class="item">
-			Background
-			<input type="text" class="item-color item-color-sunny" id="cp-bg" value="#000000">
-		</label>
-		<label class="item">
-			Hours
-			<input type="text" class="item-color item-color-sunny" id="cp-hour" value="#000000">
-		</label>
-		<label class="item">
-			Minutes
-			<input type="text" class="item-color item-color-sunny" id="cp-min" value="#000000">
-		</label>
-		<label class="item">
-			Separator (colon)
-			<input type="text" class="item-color item-color-sunny" id="cp-colon" value="#000000">
-		</label>
-		<label class="item">
-			Date
-			<input type="text" class="item-color item-color-sunny" id="cp-date" value="#000000">
-		</label>
-		<label class="item">
-			Day of week
-			<input type="text" class="item-color item-color-sunny" id="cp-dow" value="#000000">
-		</label>
-		<label class="item">
-		  Week number
-			<input type="text" class="item-color item-color-sunny" id="cp-week" value="#000000">
-		</label>
-		<label class="item">
-		  Battery
-			<input type="text" class="item-color item-color-sunny" id="cp-bat" value="#000000">
-		</label>
-		<label class="item">
-		  AM/PM indicator
-			<input type="text" class="item-color item-color-sunny" id="cp-ampm" value="#000000">
-		</label>
+<div id='colorcapable'>
+	<div class="item-container">
+		<div class="item-container-header">Predefined Color Schemes</div>
+		<div class="item-container-content">
+			<label class="item">
+				Color scheme
+				<select name="theme" id="theme" dir="rtl" class="item-select">
+					<option class="item-select-option" value="0" selected>Actual - no change</option>
+					<option class="item-select-option" value="1">Default</option>
+					<option class="item-select-option" value="2">Black on White</option>
+					<option class="item-select-option" value="3">White on Black</option>
+					<option class="item-select-option" value="4">Blue</option>
+					<option class="item-select-option" value="5">Red</option>
+					<option class="item-select-option" value="6">Color mix</option>
+					<option class="item-select-option" value="7">Green on White</option>
+					<option class="item-select-option" value="8">Red on White</option>
+				</select>
+			</label>	
+		</div>
+	</div>
+
+
+	<div style="padding: 20px 40%">
+	<div style="width: 88px; background-color: black; height: 98px; padding: 1px; font-family: sans serif; text-align: center; text-decoration: none; text-shadow: none !important;" id="preview0">
+		<div style="width: 88px; height: 24px; margin: 0; border: 0; padding: 0; font-size: 14px; color: yellow" id='ct-date'>AUG 22</div>
+		<div style="padding: 10px 0 ; margin: 0; border: 0;">
+			<span style="font-size: 24px; color: orange;" id='ct-hour'>12</span>
+			<span style="font-size: 20px; color: darkgray;" id='ct-colon'>:</span>
+			<span style="font-size: 24px; color: white;" id='ct-min'>00</span>
+		</div>
+		<div style="width: 88px; height: 24px; margin: 0; border: 0; padding: 0; text-align: center; font-size: 14px; color: yellow" id='ct-dow'><span style="font-size: 10px; color: white; padding-right: 10px;" id='ct-bat'>90 </span>SAT<span style="font-size: 10px; color: white; padding-left: 10px;" id='ct-week'> 05</span></div>
+	</div>
+	</div>
+
+	<div class="item-container">
+		<div class="item-container-header">Color scheme designer</div>
+		<div class="item-container-content">
+			<label class="item">
+				Background
+				<input type="text" class="item-color item-color-sunny" id="cp-bg" value="#000000">
+			</label>
+			<label class="item">
+				Hours
+				<input type="text" class="item-color item-color-sunny" id="cp-hour" value="#000000">
+			</label>
+			<label class="item">
+				Minutes
+				<input type="text" class="item-color item-color-sunny" id="cp-min" value="#000000">
+			</label>
+			<label class="item">
+				Separator (colon)
+				<input type="text" class="item-color item-color-sunny" id="cp-colon" value="#000000">
+			</label>
+			<label class="item">
+				Date
+				<input type="text" class="item-color item-color-sunny" id="cp-date" value="#000000">
+			</label>
+			<label class="item">
+				Day of week
+				<input type="text" class="item-color item-color-sunny" id="cp-dow" value="#000000">
+			</label>
+			<label class="item">
+			  Week number
+				<input type="text" class="item-color item-color-sunny" id="cp-week" value="#000000">
+			</label>
+			<label class="item">
+			  Battery
+				<input type="text" class="item-color item-color-sunny" id="cp-bat" value="#000000">
+			</label>
+			<label class="item">
+			  AM/PM indicator
+				<input type="text" class="item-color item-color-sunny" id="cp-ampm" value="#000000">
+			</label>
+		</div>
 	</div>
 </div>
 
@@ -209,6 +225,8 @@
 -->
 <script>
 	var settings = {};
+	var platform = '';
+
 	var DEFAULT_THEME = "C0F4F4FFFFFCFCD5D5FFFF";
 
 	var themeSet = [
@@ -299,15 +317,27 @@
 			settings.lang = l;
 		}
 
-		var themeStr = "";
-		Object.keys(themeItems).forEach(function(x) {
-			themeStr += GColor.shortHex($('#cp-'+x.replace('2','')).val().replace(/#/, ''));
-		});
-		settings.color_theme = themeStr;
-		//alert(themeStr);
+		if (platform === 'aplite') {
+			settings.invert = $('#invert')[0].checked & 1; 
+		} else {
+			var themeStr = "";
+			Object.keys(themeItems).forEach(function(x) {
+				themeStr += GColor.shortHex($('#cp-'+x.replace('2','')).val().replace(/#/, ''));
+			});
+			settings.color_theme = themeStr;
+			//alert(themeStr);
+		}
 	}
 
 	$().ready(function(){
+
+		platform = getQueryParam('platform', 'basalt');
+		if (platform === 'aplite') {
+			$('#colorcapable').hide();
+		} else {
+			$('#bwonly').hide();
+		}
+
 
 		$('#b-save').click(function(){
 			saveSettings();
@@ -347,6 +377,7 @@
 			settings.bat_num = 1;
 			settings.bat_ico = 1;
 			settings.week_no = 1;
+			settings.invert = 0;
 		}
 
 		if (settings.bt_vibe) {
@@ -388,6 +419,10 @@
 	
 		if (settings.lang) {
 			$('#select-lang')[0].value = settings.lang;
+		}
+
+		if (settings.invert) {
+			$('#invert')[0].checked = settings.invert === 1;
 		}
 
 		var colors = DEFAULT_THEME;
