@@ -1,9 +1,10 @@
 CACHE MANIFEST
 
-# Version 1.1.6
+# Version 1.1.7
 
 sbig-v3.html
 ../js/gcolor.js
 ../js/slate.min.js
 ../css/slate.min.css
-..//fonts/PTSans-regular.woff
+../fonts/PTSans-regular.woff
+../fonts/PFDinDisplayPro-Light.woff
