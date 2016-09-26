@@ -110,6 +110,7 @@
 					<option class="item-select-option" value="6">Color mix</option>
 					<option class="item-select-option" value="7">Green on White</option>
 					<option class="item-select-option" value="8">Red on White</option>
+					<option class="item-select-option" value="9">Orange and Pink (MiS)</option>
 				</select>
 			</label>	
 		</div>
@@ -238,8 +239,9 @@
 		"C0E0E0F5F5FAFAD5D5E0E0",
 		"C0E7E7E5E5FAFED5D5E7E7",
 		"FFC4C4C4C4D5D5EAEAC4C4",
-		"FFD0D0E0E0E5E1EAEAD0D0"
-	];
+		"FFD0D0E0E0E5E1EAEAD0D0",
+		"C0F4F4FFFFFAFAFFD5EEFA"
+		];
 
 	var themeItems = {
 		'bg':0, 'hour':1, 'hour2': 2, 'min':3, 'min2':4, 'date': 5, 'dow':6, 'colon': 7, 'ampm': 8, 'bat': 9, 'week': 10,
@@ -325,7 +327,7 @@
 				themeStr += GColor.shortHex($('#cp-'+x.replace('2','')).val().replace(/#/, ''));
 			});
 			settings.color_theme = themeStr;
-			//alert(themeStr);
+			alert(themeStr);
 		}
 	}
 
